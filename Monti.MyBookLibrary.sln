@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monti.MyBookLibrary.Web", "Monti.MyBookLibrary.Web\Monti.MyBookLibrary.Web.csproj", "{AFF8FB12-FEF4-484E-8C38-3297B673B1CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monti.MyBookLibrary.Data", "Monti.MyBookLibrary.Data\Monti.MyBookLibrary.Data.csproj", "{C9E78ACA-EC94-449F-803B-577F3AC755B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFF8FB12-FEF4-484E-8C38-3297B673B1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF8FB12-FEF4-484E-8C38-3297B673B1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF8FB12-FEF4-484E-8C38-3297B673B1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF8FB12-FEF4-484E-8C38-3297B673B1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E78ACA-EC94-449F-803B-577F3AC755B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E78ACA-EC94-449F-803B-577F3AC755B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E78ACA-EC94-449F-803B-577F3AC755B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E78ACA-EC94-449F-803B-577F3AC755B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CC20A60-83A5-4A55-B38E-32BD893CAF81}
+	EndGlobalSection
+EndGlobal

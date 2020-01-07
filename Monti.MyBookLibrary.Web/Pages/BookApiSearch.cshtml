@@ -1,0 +1,34 @@
+﻿@page
+@model Monti.MyBookLibrary.Web.Pages.BookApiSearchModel
+@{
+    ViewData["Title"] = "BookAPISearch";
+}
+
+<h1>BookAPISearch</h1>
+
+<form method="post">
+    <div class="form-group">
+        <input class="form-control" asp-for="Title" placeholder="Cerca il titolo di un libro" aria-label="Search">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cerca</button>
+</form>
+
+@foreach (var b in Model.BookList)
+{
+    <div class="row">
+        <div class="col-md-9">
+            <h3>@b.title_suggest</h3>
+            <p>@b.author_name?.FirstOrDefault()</p>
+        </div>
+        <div class="col-md-3">
+            @if (b.isbn != null)
+            {
+                <a class="btn btn-primary" asp-page="BookApiDetails" asp-route-isbn="@b.isbn.FirstOrDefault()">Aggiungi questo libro</a>
+            }
+        </div>
+    </div>
+    <hr>
+}
+
+

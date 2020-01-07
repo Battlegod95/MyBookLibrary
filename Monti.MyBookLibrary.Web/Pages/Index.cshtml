@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@foreach (var book in Model.Books)
+{
+    <h2>@book.Title</h2>
+    <p>@book.Description</p>
+    <a asp-page="Books/Details" asp-route-id="@book.Id">Vai al libro</a>
+    <br />
+    <a asp-page="/Delete" asp-route-id="@book.Id">Cancella</a>
+    @*<button type="button" type="submit" class="btn btn-primary" asp-route-id="@book.Id" asp-page="/Delete">Cancella</button>*@
+    <hr />
+}

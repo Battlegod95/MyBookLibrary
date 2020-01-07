@@ -1,0 +1,16 @@
+﻿@page
+@model Monti.MyBookLibrary.Web.Pages.Books.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+@*@foreach (var book in Model.Book)
+{
+    <h2>@book.Title</h2>
+    <p>@book.Description</p>
+    <a asp-page="Books/Details" asp-route-id="@book.Id">Vai al libro</a>
+    <hr />
+}*@
+
+<h1>@Model.Book.Title</h1>
+<h2>@Model.Book.Author</h2>
